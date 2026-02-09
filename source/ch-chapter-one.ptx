@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-chapter-one" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction and Preliminaries</title>
+
+  <introduction>
+   <p>
+Consider a forced oscillator, as discussed in 
+<xref ref="subsection-spring-mass"/> of 
+<xref ref="chap-higher-order"/>, described by the equation
+</p>
+
+<men xml:id="chap7-01">
+  <m>y''(t) + \omega^2 y(t) = f(t);</m>
+  <m>y(0) = 0,\; y'(0)= 0.</m>
+</men>
+
+<p>
+where <m>f(t)</m> is an impulsive force. At <m>t=0</m>, the mass is at rest
+at its equilibrium position. At time <m>t=a</m>, the mass experiences a
+sharp, brief downward impact, such as a hammer strike, modeled by an
+impulsive force <m>f(t)</m>.
+</p>
+
+<p>
+An impulsive force of this nature is commonly modeled using an idealized
+mathematical object called the <term>Dirac delta</term> “function”,
+denoted by <m>\delta(t-a)</m>, which is characterized by the following
+properties:
+</p>
+
+<ol label="roman">
+  <li>
+    <p><m>\delta(t-a)=0</m> for all <m>t\ne a</m>.</p>
+  </li>
+  <li>
+    <p>
+      <m>\int_{-\infty}^{\infty}\delta(t-a) g(t)\,dt = g(a)</m>
+      for any function <m>g</m> continuous on an open interval
+      containing <m>a</m>.
+    </p>
+  </li>
+</ol>
+
+<p>
+We note that when <m>g(t)=1</m> in (ii), we obtain
+<m>\int_{-\infty}^{\infty}\delta(t-a)\,dt = 1</m>.
+Based on properties (i) and (ii), it is important to recognize that
+<m>\delta(t-a)</m> is not a function in the usual sense; rather it is a
+typical example of <em>generalized functions</em> or
+<em>distributions</em>, developed rigorously by Sergei Sobolev in 1936
+and later in the 1950s by Laurent Schwartz, who provided the most
+systematic development of distribution theory.
+For an elegant introduction with applications, see
+Zemanian<fn xml:id="zemanian-ref">
+  A. H. Zemanian,
+  <title>Distribution Theory and Transform Analysis</title>,
+  second edition, Dover, New York, 1987.
+</fn>.
+</p>
+
+<p>
+The Dirac delta function is particularly useful for modeling phenomena
+involving instantaneous or localized effects, such as a lightning strike,
+a point heat explosion, or the sudden burst of dye at a specific
+location. Because of properties (i) and (ii), the Dirac delta function
+<m>\delta(t-a)</m> is said to be concentrated at <m>t=a</m>.
+</p>
+
+<p>
+Mathematically, <m>\delta(t-a)</m> can be interpreted as the limit of a
+sequence of approximating impulse functions. One such approximation is
+given by
+</p>
+
+<me>
+d_{a,\varepsilon}(t) =
+\begin{cases}
+\dfrac{1}{\varepsilon} &amp; \text{if } a \le t \le a+\varepsilon,\\
+0 &amp; \text{otherwise}.
+\end{cases}
+</me>
+
+<p>
+This represents a pulse of height <m>1/\varepsilon</m> and width
+<m>\varepsilon&gt;0</m>, centered at <m>t=a</m>.
+</p>
+
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-section-name.ptx" />
+
+</chapter>
