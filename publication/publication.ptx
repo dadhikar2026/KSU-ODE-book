@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publication>
+  <source>
+    <directories>
+      <external/>
+    </directories>
+    <main>
+      <file>book.ptx</file>
+    </main>
+  </source>
+  <targets>
+    <target name="html">
+      <format>html</format>
+    </target>
+    <target name="latex">
+      <format>latex</format>
+    </target>
+  </targets>
+</publication>
